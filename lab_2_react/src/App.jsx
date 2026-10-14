@@ -1,5 +1,5 @@
 
-import Header from "./components/Header";
+import Header from "./components/header";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
