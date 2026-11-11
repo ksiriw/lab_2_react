@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7f6;
+    color: #333333;
+    margin: 20px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #b2e4df;
+    padding: 20px;
+    border: 1px solid #83cfc7;
+    border-radius: 12px;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
+header strong {
+    color: white;
+}
+
+header a {
+    color: black;
+}
+
+main {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #c5e3e0;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #267f79;
+    border-bottom: 1px solid #9dd8d2;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #438f89;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#objective {
+    background-color: #f0faf9;
+    border-radius: 8px;
+}
+
+#skills {
+    border-left: 3px solid #83cfc7;
+    border-radius: 8px;
+}
+
+#references {
+    background-color: #f0faf9;
+    border-radius: 8px;
+}
+
+a[href] {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #a35e35;
+}
+
+a:focus {
+    outline: 2px solid #267f79;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li::marker {
+    color: #267f79;
+}
+
+footer {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header,
+    main {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.highlight {
+    color: #267f79;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+
+    header p {
+        overflow-wrap: anywhere;
+    }
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark a {
+    color: #83cfc7;
+}
+
+body.dark section,
+body.dark header,
+body.dark footer {
+    border-color: #444;
+    background-color: #2a2a2a;
+}
+
+body.dark main {
+    background-color: #222222;
+    border-color: #444;
+}
+
+body.dark #objective,
+body.dark #references {
+    background-color: #2a2a2a;
+}
+
+body.dark h2 {
+    color: #83cfc7;
+    border-bottom-color: #3b6b67;
+}
+
+body.dark h3 {
+    color: #9dd8d2;
+}
+
+body.dark .highlight {
+    color: #83cfc7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #267f79;
+    z-index: 1000;
+    color: #333;
+}
+
+.comment-card {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+

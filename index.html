@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме — Малофій Оксана</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h3 {
+            font-style: italic;
+        }
+    </style>
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body class="light">
 
     <header>
+        <button id="theme-toggle" style="float: right; padding: 5px 10px;">Змінити тему</button>
+        
         <h1>Малофій Оксана Любомирівна</h1>
         <p><strong>Адреса:</strong> м. Львів, 79054, Україна</p>
         <p><strong>Email:</strong> <a href="mailto:oksana.malofii.kb.2025@lpnu.ua">oksana.malofii.kb.2025@lpnu.ua</a></p>
@@ -17,20 +26,15 @@
 
     <main>
         <section id="objective">
-            <h2>Мета</h2>
-            <p>Здобути посаду фахівця з кібербезпеки, де я зможу застосувати свої знання з інформаційної безпеки, 
-            зробити внесок у захист систем та розвиватися професійно в динамічному середовищі.</p>
+            <h2 style="text-decoration: underline;">Мета</h2>
+            <p>Здобути посаду фахівця з <span class="highlight">кібербезпеки</span>, де я зможу застосувати свої знання з інформаційної безпеки,</p>
         </section>
 
         <section id="education">
             <h2>Освіта</h2>
             <ul>
-                <li>
-                    <p>2014 – 2025: Бурштинський ліцей імені Ольги Басараб</p>
-                </li>
-                <li>
-                    <p>2025 – 2029: Національний університет «Львівська політехніка»</p>
-                </li>
+                <li><p>2014 – 2025: Бурштинський ліцей імені Ольги Басараб</p></li>
+                <li><p>2025 – 2029: Національний університет «Львівська політехніка»</p></li>
             </ul>
         </section>
 
@@ -48,7 +52,6 @@
                 <li>Основи програмування (C#, Python)</li>
                 <li>Знання нормативно-правового забезпечення кібербезпеки</li>
             </ul>
-
             <h3>Особисті якості</h3>
             <ul>
                 <li>Вміння працювати в команді</li>
@@ -61,12 +64,32 @@
             <h2>Рекомендації</h2>
             <p>Рекомендації надаються за запитом.</p>
         </section>
+
+        <section id="employer-comments">
+            <h2>Коментарі попередніх роботодавців</h2>
+            <div id="comments-container">Завантаження коментарів...</div>
+        </section>
     </main>
 
     <footer>
         <hr>
         <p>&copy; 2026 Малофій Оксана</p>
+        <p style="font-size: 0.8em; color: gray;" id="system-info"></p>
     </footer>
+
+    <div id="feedback-modal" class="modal">
+        <h3>Форма зворотного зв'язку</h3>
+        <form action="https://formspree.io/f/xeagjeyl" method="POST">
+            <input type="text" name="name" placeholder="Ім'я" required style="width: 100%; margin-bottom: 10px; padding: 5px;"><br>
+            <input type="email" name="email" placeholder="Email" required style="width: 100%; margin-bottom: 10px; padding: 5px;"><br>
+            <input type="tel" name="phone" placeholder="Номер телефону" required style="width: 100%; margin-bottom: 10px; padding: 5px;"><br>
+            <textarea name="message" placeholder="Ваше повідомлення" required style="width: 100%; margin-bottom: 10px; padding: 5px;"></textarea><br>
+            <button type="submit" style="padding: 5px 15px; background: #267f79; color: white; border: none;">Надіслати</button>
+            <button type="button" id="close-modal" style="padding: 5px 15px; margin-left: 10px;">Закрити</button>
+        </form>
+    </div>
 
 </body>
 </html>
+
+
