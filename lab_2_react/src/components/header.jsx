@@ -12,6 +12,9 @@ function Header({ theme, onToggleTheme }) {
       <h1 className="mb-3 text-2xl font-bold text-teal-800 sm:text-3xl">
         Малофій Оксана Любомирівна
       </h1>
+      <p className="mx-auto mb-4 inline-block rounded-full bg-[#0f766e] px-4 py-1 text-sm font-medium text-[#fff]">
+        Студентка спеціальності «Кібербезпека та захист інформації» · група КБ-204
+      </p>
       <p className="mb-2 text-gray-700">
         <span className="font-semibold text-teal-800">Місто:</span>{" "}
         Львів, Україна
